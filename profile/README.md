@@ -6,5 +6,5 @@
 - [如何使用 Github Package](https://docs.github.com/zh/packages/working-with-a-github-packages-registry/working-with-the-container-registry)（或者说 ghcr.io 容器镜像注册表）
 - docker 拉取的时候，格式均为：`docker pull ghcr.io/ds-hw-fuuzen/<repo-name>:<branch-name>`
 - 为了方便使用 git 开发，我将宿主机器的 `${HOME}/.ssh` 挂载到了容器里，使用 ssh 方式对 github 进行 pull 和 push 等操作更加方便
-- 环境变量通过 `docker-compose.yml` 或 `deccontainer.json` 硬编码注入容器
+- 环境变量通过 `docker-compose.yml` 或 `devcontainer.json` 硬编码注入容器
 - 所有开发容器我都用 fish 作为 shell
