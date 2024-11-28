@@ -21,7 +21,7 @@
 
 ### SSH
 
-- 为了方便使用 git 开发，我将宿主机器的 `${HOME}/.ssh` 挂载到了容器里，使用 ssh 方式对 github 进行 pull 和 push 等操作更加方便
+为了方便使用 git 开发，我将宿主机器的 `${HOME}/.ssh` 挂载到了容器里，使用 ssh 方式对 github 进行 pull 和 push 等操作更加方便
 
 如果你是 Windows 平台,请注意 `docker-compose.yml` 中如下内容：
 
