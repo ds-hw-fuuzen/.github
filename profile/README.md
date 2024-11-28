@@ -2,6 +2,10 @@
 
 使用开发容器作为更现代化的环境配置方式，开箱即用，也方便同学们减少配置环境上浪费时间
 
+[!1hw1](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml)
+[![hw2前端部分](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml)
+[![hw2后端部分](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml)
+
 ## 使用 VSCode + docker 开发
 
 ### 准备工作
@@ -9,9 +13,9 @@
 如果您没有使用过 ghcr.io 容器镜像注册表，请先参考[如何使用 Github Package](https://docs.github.com/zh/packages/working-with-a-github-packages-registry/working-with-the-container-registry)，在 github 上生成 token 用于登陆 ghcr.io
 
 - docker 登录 ghcr.io
-- 克隆本仓库到您的电脑中
+- 克隆对应实验仓库到您的电脑中
 - 确保您的 VSCode 安装了 Dev-Containers 插件
-- VSCode 打开本仓库
+- VSCode 打开仓库
 
 ### SSH
 
