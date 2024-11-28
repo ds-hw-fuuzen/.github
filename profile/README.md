@@ -43,7 +43,7 @@ services:
       - /c/Users/fuuzen/.ssh:/root/.ssh
 ```
 
-或者比较简单的项目没有 `.devcontainer/devcontainer.json`，则请注意 `.devcontainer/devcontainer.json` 中这部分内容:
+或者比较简单的项目没有 `docker-compose.yml`，则请注意 `.devcontainer/devcontainer.json` 中这部分内容:
 
 ```json json
 {
