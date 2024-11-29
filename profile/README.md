@@ -2,9 +2,11 @@
 
 使用开发容器作为更现代化的环境配置方式，开箱即用，也方便同学们减少配置环境上浪费时间
 
-|   仓库   | [hw1](https://github.com/ds-hw-fuuzen/hw1) | [hw2-frontend](https://github.com/ds-hw-fuuzen/hw2-frontend) | [hw2-backend](https://github.com/ds-hw-fuuzen/hw2-backend) |
-| ------- | --- | --- | --- |
-| 镜像状态 | [![hw1](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml) | [![hw2前端部分](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml) | [![hw2后端部分](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml) |
+|  仓库  | 镜像状态 |
+| --- | --- |
+| [hw1](https://github.com/ds-hw-fuuzen/hw1) |[![hw1](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml) |
+| [hw2-frontend](https://github.com/ds-hw-fuuzen/hw2-frontend) | [![hw2-frontend](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml)  |
+[hw2-backend](https://github.com/ds-hw-fuuzen/hw2-backend) | [![](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml) |
 
 ## 使用 VSCode + docker 开发
 
