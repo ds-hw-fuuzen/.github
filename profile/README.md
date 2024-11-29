@@ -7,6 +7,8 @@
 | [hw1](https://github.com/ds-hw-fuuzen/hw1) |[![hw1](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw1/actions/workflows/docker-publish.yml) |
 | [hw2-frontend](https://github.com/ds-hw-fuuzen/hw2-frontend) | [![hw2-frontend](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-frontend/actions/workflows/docker-publish.yml)  |
 [hw2-backend](https://github.com/ds-hw-fuuzen/hw2-backend) | [![](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml) |
+| [hw3-frontend](https://github.com/ds-hw-fuuzen/hw3-frontend) | [![hw3-frontend](https://github.com/ds-hw-fuuzen/hw3-frontend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw3-frontend/actions/workflows/docker-publish.yml)  |
+[hw3-backend](https://github.com/ds-hw-fuuzen/hw3-backend) | [![](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/ds-hw-fuuzen/hw2-backend/actions/workflows/docker-publish.yml) |
 
 ## 使用 VSCode + docker 开发
 
