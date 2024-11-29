@@ -99,6 +99,16 @@ services:
 
 不同的仓库对其他环境变量要求可能不一样，注意自己修改。
 
+### 网络对接
+
+对于一些前后端分离的项目，由于 VSCode 进行 docker compose 的时候会强制指定自定义的 project_name，会导致 `docker-compose.yml` 中自定义网络接口被强制加上 project_name 前缀，导致前后端会创建 2 个不同网桥。为了解决这个问题只能创建容器前手动创建外部网络接口。例如：
+
+```shell shell
+
+```
+
+一些比较简单的项目则不需要。需要这么做的项目有不止一个仓库，开发时同时打开两个项目 VSCode 窗口。
+
 ### 开始开发
 
 `ctrl + shift + p` (`command + shift + p` for mac) 输入 Reopen with container 使用开发容器打开,若没有本地还镜像将自动拉取镜像。
