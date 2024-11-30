@@ -25,7 +25,7 @@
 
 为了方便使用 git 开发，我将宿主机器的 `${HOME}/.ssh` 挂载到了容器里，使用 ssh 方式对 github 进行 pull 和 push 等操作更加方便
 
-如果你是 Windows 平台,请注意 `docker-compose.yml` 中如下内容：
+如果你是 Windows 平台,请注意 `.devcontainer/docker-compose.yml` 中如下内容：
 
 ``` yaml yaml
 services:
@@ -43,26 +43,6 @@ services:
     # ......
     volumes:
       - /c/Users/fuuzen/.ssh:/root/.ssh
-```
-
-或者比较简单的项目没有 `docker-compose.yml`，则请注意 `.devcontainer/devcontainer.json` 中这部分内容:
-
-```json json
-{
-    "mounts": [
-        "source=${HOME}/.ssh,target=/root/.ssh,type=bind"
-    ]
-}
-```
-
-修改为硬编码正斜杠路径,例如我的用户名 `fuuzen`:
-
-```json json
-{
-    "mounts": [
-        "source=/c/Users/fuuzen/.ssh,target=/root/.ssh,type=bind"
-    ]
-}
 ```
 
 ### 环境变量
@@ -99,17 +79,19 @@ services:
 
 不同的仓库对其他环境变量要求可能不一样，注意自己修改。
 
-### 网络对接
+### 前后端对接
 
-对于一些前后端分离的项目，由于 VSCode 进行 docker compose 的时候会强制指定自定义的 project_name，会导致 `docker-compose.yml` 中自定义网络接口被强制加上 project_name 前缀，导致前后端会创建 2 个不同网桥。为了解决这个问题只能创建容器前手动创建外部网络接口。例如：
+> 对于一些前后端分离的项目，由于 VSCode 进行 docker compose 的时候会强制指定自定义的 project_name，会导致 `docker-compose.yml` 中自定义网络接口被强制加上 project_name 前缀，导致前后端会创建 2 个不同网桥，但不影响前后端对接。
 
-```shell shell
-docker network create hwX-bridge
+由于鉴权需要，本系列实验都要求开发主机名为 `dev.ce.bktencent.com`，使用本地浏览器调试的时候都需要配置自己机器的 `hosts` 添加：
+
+```
+127.0.0.1 dev.ce.bktencent.com
 ```
 
-这个命令创建一个自定义 docker 网络接口，默认为网桥 bridge。
+前端访问后端的 API 来自环境变量 `BK_BACKEND_API_PREFIX=http://dev.ce.bktencent.com:8000`，这里后端 Django 默认使用 `8000` 端口，物理主机会转发这个端口到自己的 `8000` 端口上（就像转发前端的 `5000` 端口一样）。所以前端访问后端服务时，会直接访问主机转发的后端服务端口。
 
-一些比较简单的项目则不需要。需要这么做的项目有不止一个仓库，开发时同时打开两个项目 VSCode 窗口。
+前后端开发时同时打开两个项目 VSCode 窗口即可，不需要额外配置。
 
 ### 开始开发
 
