@@ -91,11 +91,9 @@ services:
   db:
     # ......
     environment:
-      MYSQL_DATABASE: ${YOUR_APP_ID}
+      MYSQL_DATABASE=${YOUR_APP_ID}
     # ......
 ```
-
-（上述有两种风格的环境变量定义）
 
 在你的开发中，请先到腾讯蓝鲸平台创建自己的 APP，将 APP 的 ID 和 SECRET 填写到这里，替换 `${YOUR_APP_ID}` 和 `${YOUR_APP_SECRET}`。
 
